@@ -1,10 +1,9 @@
-#+BEGIN_HTML
 ---
 layout: page
-title: Première page
+title: Dexuiemes
 tagline: Bonjour tout le monde
 ---
 {% include JB/setup %}
-#+END_HTML
+
 
 * une page orgmode
