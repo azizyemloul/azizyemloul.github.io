@@ -1,0 +1,10 @@
+#+BEGIN_HTML
+---
+layout: page
+title: Première page
+tagline: Bonjour tout le monde
+---
+{% include JB/setup %}
+#+END_HTML
+
+* une page orgmode
