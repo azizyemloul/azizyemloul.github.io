@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sténotypie</title>
+    
+    <meta name="author" content="Aziz Yemloul">
+
+    <!-- Enable responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-narrow">
+          <a class="brand" href="/">Plover France</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-narrow">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Sténotypie  <small>Grandjean pour plover</small></h1>
+</div>
+
+<div class="row-fluid">
+  <div class="span12">
+    <pre class="example">
+                  ___                                           ___
+                 | S |___                                   ___| D |
+                 |___| P |___                           ___| ᴎ |___|
+                 | K |___| T |___                   ___| I |___| C |
+                 |___| M |___| * |___     _     ___| A |___| $ |___|
+                     |___| F |___| N |   / \   | O |___| £ |___|
+                         |___| R |___|  /   \  |___| U |___|
+                             |___| L | /  Y  \ | E |___|
+                                 |___||       ||___|
+                                       \_____/
+
+               ___________________________________________________________
+              |TAB  |  S|  P|  T|  *|  N|   |  O|  A|  I|  ᴎ|  D|   |Enter|
+              |_____|___|___|___|___|___|___|___|___|___|___|___|___|     |
+              |MAJ   | K | M | F | R | L | Y | E | U | £ | $ | C |   |  ⏎ |
+              |______|___|___|___|___|___|___|___|___|___|___|___|___|____|
+              | ⇧  |   |   |   |   |  L|  Y|Y  |E  |   |   |   |⇧         |
+              |____|___|___|___|___|___|___|___|___|___|___|___|__________|
+</pre>
+<h1>Vous voulez utiliser Plover avec le clavier Grandjean</h1>
+<p>Sous Windows, téléchargez le contenu de ce dépôt et lancez
+  plover.exe, après avoir dézippé l&#8217;archive.</p>
+<p>Il est très probable que vous receviez un message d&#8217;alerte au
+  démarrage que vous pouvez ignorer.</p>
+<p>Appuyez sur <code>Configure</code>, puis sur l&#8217;onglet <code>Dictionary</code> et, après
+  avoir supprimé le dictionnaire anglais par défaut, ajoutez les
+  dictionnaires français en respectant l&#8217;ordre numérique.</p>
+<p>L&#8217;ordre des fichiers a sa raison : Plover renvoie la dernière
+  traduction du sténogramme après avoir passé tous ces
+  fichiers dans l&#8217;ordre.</p>
+<p>Utilisez le fichier <code>07_French_User.json</code> pour ajouter vos entrées
+  personnelles. Celles-ci annuleront toutes les autres
+  entrées sur les autres dictionnaires.</p>
+<p>Le dictionnaire est au format JSON. Ce format désigne un fichier texte
+  dont le tout premier caractère est une accolade ouvrante <code>{</code>.</p>
+<p>Chaque ligne de ce fichier contient une &#8220;instruction&#8221; de la forme
+  suivante :</p>
+<div class="highlight"><pre><span class="s2">&quot;STE/NO/K*RAnC&quot;</span><span class="err">:</span> <span class="s2">&quot;sténogramme&quot;</span><span class="err">,</span>
+</pre></div>
+<p>La dernière entrée du dictionnaire ne doit pas s&#8217;achever avec une
+  virgule comme les précédentes mais avec une accolade fermante. Comme
+  ceci :</p>
+<div class="highlight"><pre><span class="s2">&quot;T*El/NYE/MO&quot;</span><span class="err">:</span><span class="s2">&quot;dernier mot&quot;</span><span class="err">}</span>
+</pre></div>
+<h2>Observation importante :</h2>
+<p>Les caractères <code>£</code> (L orné) et <code>ᴎ</code> (N inversé) sont remplacés dans les
+  fichiers JSON respectivement par les caractères <code>l</code> (L minuscule) et
+  <code>n</code> (N minscule) en raison de l&#8217;exotisme des premiers. L&#8217;introduction
+  de l&#8217;encodage UTF8 étant récent dans Plover, il vallait mieux opter
+  pour des caractères plus communs.</p>
+<h1>Les matériaux de construction</h1>
+<p>La base de données lexicales libre <a href="http://www.lexique.org/">Lexique</a> est le fondement de la
+  construction d&#8217;un dictionnaire sténotypique au format JSON requis par
+  le projet <a href="http://plover.stenoknight.com/">Plover</a>.</p>
+<p>Le fichier original contenant cette base de données est
+  <code>Atelier/Lexique380/Lexique380.txt</code>.</p>
+<p>Le fichier <code>Atelier/Plover-files/france_french_words.txt</code> sert à la
+  vérification orthographique et provient également des travaux des équipes
+  <a href="http://www.lexique.org/listes/liste_mots.txt">Lexique</a>.</p>
+<p>Le fichier <code>Atelier/Hunspell-aff/fr.aff</code> fait partie de la
+  distribution <a href="http://hunspell.sourceforge.net/">Hunspell</a>, un analyseur orthographique et morphologique
+  prenant en charge la langue française. Il sert de base d&#8217;inspiration à
+  la définition des règles d&#8217;affixation que dois contenir le fichier
+  <code>orthography.py</code>.</p>
+<p>La construction des dictionnaires JSON se fait grâce au script awk
+  <code>Atelier/dic-generator.awk</code>.</p>
+<p>&lt;ul class=&#8221;posts&#8221;&gt;</p>
+<p>&lt;li&gt;&lt;span&gt;29 Dec 2011&lt;/span&gt; &amp;raquo; &lt;a href=&#8221;/lessons/2011/12/29/jekyll-introduction&#8221;&gt;Jekyll Introduction&lt;/a&gt;&lt;/li&gt;</p>
+<p>&lt;/ul&gt;</p>
+
+  </div>
+</div>
+
+
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; 2014 Aziz Yemloul
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+
